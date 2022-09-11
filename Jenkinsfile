@@ -2,7 +2,7 @@ pipeline{
    agent none
    stages {
       stage('Git checkout'){
-	    agent { label 'slave1' }
+	    agent { label 'node-1' }
          steps{
 		    git 'https://github.com/priya3019/Java-codes.git'
 		    echo "Checkout is successfull"
